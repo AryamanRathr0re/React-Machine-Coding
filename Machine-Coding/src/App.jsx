@@ -1,6 +1,8 @@
 import Carousel from "./Carousel/Carousel";
 import CarouselWithPause from "./Carousel/CarouselWithPause";
 import Counter from "./Counter/Counter";
+import ProgressBar from "./ProgressBar/ProgressBar";
+import ShowHide from "./ShowAndHide/ShowHide";
 import Timer from "./Timer/Timer";
 import TodoList from "./TodoList/TodoList";
 
@@ -11,7 +13,9 @@ function App() {
       {/* <CarouselWithPause/> */}
       {/* <Counter /> */}
       {/* <Timer /> */}
-      <TodoList />
+      {/* <TodoList /> */}
+      {/* <ShowHide /> */}
+      <ProgressBar />
     </>
   );
 }
