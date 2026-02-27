@@ -1,6 +1,5 @@
-import React, { createContext, useState } from "react";
-
-export const themeContext = createContext();
+import React, { useState } from "react";
+import { ThemeCtx } from "./context";
 const ThemeContext = ({ children }) => {
   const [theme, setTheme] = useState("light");
 
@@ -9,9 +8,9 @@ const ThemeContext = ({ children }) => {
   }
   return (
     <div>
-      <themeContext.Provider value={{ theme, toggleTheme }}>
+      <ThemeCtx.Provider value={{ theme, toggleTheme }}>
         {children}
-      </themeContext.Provider>
+      </ThemeCtx.Provider>
     </div>
   );
 };

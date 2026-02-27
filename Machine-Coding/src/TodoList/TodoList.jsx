@@ -39,7 +39,7 @@ const TodoList = () => {
       />
       <button onClick={addTodo}>Add task</button>
       <ul>
-        {todoList.map((elem, id) => {
+        {todoList.map((elem) => {
           return (
             <li key={elem.id}>
               <input

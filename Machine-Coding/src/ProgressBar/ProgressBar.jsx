@@ -38,6 +38,7 @@ const ProgressBar = () => {
         />
       </div>
       <p> {progress}%</p>
+      
     </div>
   );
 };

@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
-import ThemeContext, { themeContext } from "./ThemeContext";
-
-themeContext;
+import { ThemeCtx } from "./context";
 const ThemeComponent = () => {
-  const { theme, toggleTheme } = useContext(themeContext);
+  const { theme, toggleTheme } = useContext(ThemeCtx);
   let styles = {
     backgroundColor: theme === "light" ? "#fff" : "#000",
     color: theme === "light" ? "#000" : "#fff",
